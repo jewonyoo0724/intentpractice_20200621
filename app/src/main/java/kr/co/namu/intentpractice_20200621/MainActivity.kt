@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
                 // 티켓에 추가 데이터 첨부: 이릅표/ 실제값 쌍으로 첩부.
             myIntent.putExtra("message", inputMessage)
             startActivity(myIntent)
+
+        }
+
+        setNickNameBtn.setOnClickListener {
+            val myIntent = Intent(this, EditNicknameActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }
