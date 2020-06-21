@@ -3,9 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_gravity="center"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
+<Button
+    android:id="@+id/firstActivityBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="다른 화면으로 이동하기"/>
 
 </LinearLayout>
