@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
             // 일단 화면 이동 코드부터 작성
             val myIntent = Intent(this, ThirdActivity::class.java)
-                // 티켓에 추가 데이터 첨부: 이릅표/ 실제값 쌍으로 첩부.
+            // 티켓에 추가 데이터 첨부: 이릅표/ 실제값 쌍으로 첩부.
             myIntent.putExtra("message", inputMessage)
             startActivity(myIntent)
 
@@ -47,7 +47,9 @@ class MainActivity : AppCompatActivity() {
 
         setNickNameBtn.setOnClickListener {
             val myIntent = Intent(this, EditNicknameActivity::class.java)
-            startActivity(myIntent)
+            // 결과를 가지러 가는 이동은 startActvityForResult로 가야함
+            // 이런 방식의 이동은 어떤 결과를 가지러 (닉네임/비번 등) 가는지 숫자로 구별해야함. e.g. 닉네임- 1000
+            startActivityForResult(myIntent, 1000)
         }
     }
 }

@@ -14,7 +14,17 @@
         android:text="새 닉네임 입력" />
     
     <EditText
-        android:layout_width=""
-        android:layout_height=""
+        android:id="@+id/nickNameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="닉네임 입력"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닉변 완료" />
+
 
 </LinearLayout>
