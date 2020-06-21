@@ -8,18 +8,18 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".FirstActivity">
+    tools:context=".SecondActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="첫번째 액티비티"
+        android:text="두번째 액티비티"
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/closeBtn"
+        android:id="@+id/goBackBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="액티비티 닫기" />
+        android:text="기존 화면 복귀" />
 
 </LinearLayout>
