@@ -21,4 +21,17 @@
         android:layout_height="wrap_content"
         android:text="두번째 화면으로 이동하기" />
 
+    <EditText
+        android:id="@+id/messageEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전달할 내용을 입력"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/goToThirdBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="세번째 화면으로 내용을 전달" />
+
 </LinearLayout>
