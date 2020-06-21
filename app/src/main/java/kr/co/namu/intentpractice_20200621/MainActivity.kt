@@ -16,6 +16,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
+
+    val REQ_FOR_NICKNAME = 1000
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -50,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, EditNicknameActivity::class.java)
             // 결과를 가지러 가는 이동은 startActvityForResult로 가야함
             // 이런 방식의 이동은 어떤 결과를 가지러 (닉네임/비번 등) 가는지 숫자로 구별해야함. e.g. 닉네임- 1000
-            startActivityForResult(myIntent, 1000)
+            startActivityForResult(myIntent, REQ_FOR_NICKNAME)
         }
     }
 //  어떤 종류가 되었든, 결과를 가지고 돌아올때 실행되는 함수
@@ -60,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         
         // 이 함수가 실행된 이유 (어떤 요청?) -> 1000 번이였는지? -> 닉네임 변경을 위해 다녀온건지?
         
-        if (requestCode == 1000) {
+        if (requestCode == REQ_FOR_NICKNAME) {
             
             // 확인을 누른게 맞는지? -> 취소를 한게 아닌지?
             
